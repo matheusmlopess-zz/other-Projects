@@ -25,9 +25,7 @@ The ultimate goal will be the presentation of forecasts for the Iberian added to
 
 ##FUNÇÕES DE IDENTIFICAÇÃO
 
-\register <username> <password> - Verifica se o utilizador existe no servidor.
-
-Caso isso não se verifique, cria-o na base de dados e associa a password ao mesmo.
+\register <username> <password> - Verifica se o utilizador existe no servidor. Caso isso não se verifique, cria-o na base de dados e associa a password ao mesmo.
 
 \friendlist <username> - Lista os amigos associados a um utilizador.
 
