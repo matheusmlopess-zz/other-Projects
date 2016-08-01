@@ -4,7 +4,7 @@
 C++, MySQL & MatLab Projects
 
 ## Project descriptions:
-1- Forecast model using neural networks (Matlab)
+#1- Forecast model using neural networks (Matlab)
 
 In this work, it was considered a data set production schedules, consumption and market prices of the Iberian electricity system. Based on hourly data, during 2012 and 2013, is intended to create predictive models for the following day (D + 1).
 
@@ -19,29 +19,19 @@ The ultimate goal will be the presentation of forecasts for the Iberian added to
 - Thermal forecast combined cycle
 - Export forecast
 - Price forecast MIBEL
-- 
 
-2- Quiz game in Portuguese
 
-Funções
+#2- Quiz game in Portuguese
 
-FUNÇÕES DE IDENTIFICAÇÃO
+##FUNÇÕES DE IDENTIFICAÇÃO
 
 \register <username> <password> - Verifica se o utilizador existe no servidor.
 
-Caso isso não se verifique, cria-o na base de dados e associa a password ao
-
-mesmo.
+Caso isso não se verifique, cria-o na base de dados e associa a password ao mesmo.
 
 \friendlist <username> - Lista os amigos associados a um utilizador.
 
-\identify <username> - Verifica se o utilizador existe na base de dados e se já
-
-está ligado. Se ainda não existir, o username passa a estar associado a este
-
-utilizador. Serve para as pessoas se poderem ligar sem terem de criar uma
-
-conta.
+\identify <username> - Verifica se o utilizador existe na base de dados e se já está ligado. Se ainda não existir, o username passa a estar associado a este utilizador. Serve para as pessoas se poderem ligar sem terem de criar uma conta.
 
 FUNÇÕES INTERNAS PARA FUNCIONAMENTO DO JOGO
 
@@ -55,23 +45,13 @@ FUNÇÕES INTERNAS PARA FUNCIONAMENTO DO JOGO
 
 \create <questão> - Permite adição de novas questões na base de dados.
 
-\login <username> <password> - Verifica a existência do utilizador na base de
-
-dados, em caso afirmativo guarda todas as informações relativas às atividades
-
-do utilizador.
+\login <username> <password> - Verifica a existência do utilizador na base de dados, em caso afirmativo guarda todas as informações relativas às atividades do utilizador.
 
 \logout <username> - Desliga o utilizador do servidor.
 
 FUNÇÕES MULTI-JOGADOR
 
-\accept <username> - Aceita o jogo de um adversário. Se houver mais do que
-
-um desafio, escreve o utilizador que se quer defrontar. Após aceitar, envia
-
-mensagem aos outros utilizadores, dizendo que há um jogo a decorrer, entre
-
-utilizador A e B.
+\accept <username> - Aceita o jogo de um adversário. Se houver mais do que um desafio, escreve o utilizador que se quer defrontar. Após aceitar, envia mensagem aos outros utilizadores, dizendo que há um jogo a decorrer, entre utilizador A e B.
 
 \friend <username> - Adiciona utilizador a uma lista de amigos.
 
@@ -79,23 +59,15 @@ utilizador A e B.
 
 \start - Comando para dar início à partida.
 
-\challenge <username> - Função que permite ao utilizador desafiar outro
+\challenge <username> - Função que permite ao utilizador desafiar outro utilizador.
 
-utilizador.
+\info <username> - Verifica se o utilizador está na base de dados, retornando informação de dados, tal como o no de jogos e no de vitórias.
 
-\info <username> - Verifica se o utilizador está na base de dados, retornando
-
-informação de dados, tal como o no de jogos e no de vitórias.
-
-\top10 <username> - Organiza as pontuações do utilizador e retorna as 10
-
-melhores pontuações.
+\top10 <username> - Organiza as pontuações do utilizador e retorna as 10 melhores pontuações.
 
 FUNÇÕES DE SUPORTE AO JOGADOR
 
-\fifty_fifty - Função que permite suporte à resposta do utilizador reduzindo as
-
-opções de resposta para metade.
+\fifty_fifty - Função que permite suporte à resposta do utilizador reduzindo as opções de resposta para metade.
 
 \change - Função que permite ao utilizador trocar de questão caso pretenda.
 
