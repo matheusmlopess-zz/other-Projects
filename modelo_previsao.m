@@ -20,23 +20,23 @@ run dados_treino.m ;   run dados_real.m;
 
  
 % Variaveis dados treino <> dados_trn(:,[numereo])
-%[1]Preço (D+1)               %[2]Preço (D)                %[3]Preço (D-6)              %[4]Hora                     %[5]DDS (D) 
-%[6]DDS (D+1)                 %[7]Mês (D+1)             %[8]ano (D+1)                %[9]Consumo (D)       %[10]Consumo (D+1)   
-%[11]Exportação (D-1)     %[12]Exportação (D)   %[13]Exportação (D+1)  %[14]Consumo (D-1)  %[15]Consumo (D-6)
-%[16]Eólica (D-1)              %[17]Eólica (D)            %[18]Eólica (D+1)           %[19]Hídrica (D)          %[20]Hídrica (D+1) 
-%[21]Hídrica (D-1)            %[22]Hidrica (D-6)       %[23]Cog+Solar (D )      %[24]Cog+Solar (D+1) 
+%[1]PreÃ§o (D+1)               %[2]PreÃ§o (D)                %[3]PreÃ§o (D-6)              %[4]Hora                     %[5]DDS (D) 
+%[6]DDS (D+1)                 %[7]MÃªs (D+1)             %[8]ano (D+1)                %[9]Consumo (D)       %[10]Consumo (D+1)   
+%[11]ExportaÃ§Ã£o (D-1)     %[12]ExportaÃ§Ã£o (D)   %[13]ExportaÃ§Ã£o (D+1)  %[14]Consumo (D-1)  %[15]Consumo (D-6)
+%[16]EÃ³lica (D-1)              %[17]EÃ³lica (D)            %[18]EÃ³lica (D+1)           %[19]HÃ­drica (D)          %[20]HÃ­drica (D+1) 
+%[21]HÃ­drica (D-1)            %[22]Hidrica (D-6)       %[23]Cog+Solar (D )      %[24]Cog+Solar (D+1) 
 %[25]Coge+Solar (D-1)   %[26]Cog+Solar (D-6)  %[27]Carvao (D)             %[28]Carvao (D+1)	   %[29]Carvao (D-1)           
 %[30]Carvao (D-6)            %[31]Nuclear (D)           %[32]Nuclear (D+1)        %[33]Nuclear (D-1)
 %[34]Nuclear (D-6)	         %[35]GN (D)                  %[36]GN (D+1)              %[37]GN (D-1)            %[38]GN (D-6)           
-%[39]Temp (D+1  )            %[40]Vento (D+1)	     %[41]Direção (D+1)      %[42]Irradiânc (D+1)  %[43]Pluviosid (D+1)
+%[39]Temp (D+1  )            %[40]Vento (D+1)	     %[41]DireÃ§Ã£o (D+1)      %[42]IrradiÃ¢nc (D+1)  %[43]Pluviosid (D+1)
 
 % variaveis dados real <> dados_rl(:,[numereo])
-%[1]Hora                      %[2]DDS (D)                        %[3]DDS (D+1)             	  %[4]Mês (D+1)               %[5]ano (D+1)            
-%[6]Exportação (D-1)  %[7]Consumo (D-1)            %[8]Consumo (D-6)         %[9]Eólica (D-1)	         %[10]Hídrica (D-1)
+%[1]Hora                      %[2]DDS (D)                        %[3]DDS (D+1)             	  %[4]MÃªs (D+1)               %[5]ano (D+1)            
+%[6]ExportaÃ§Ã£o (D-1)  %[7]Consumo (D-1)            %[8]Consumo (D-6)         %[9]EÃ³lica (D-1)	         %[10]HÃ­drica (D-1)
 %[11]Hidrica (D-6)       %[12]Cog+Solar (D-1)        %[13]Cogo+Solar (D-6)	 %[14]Carvao (D-1)        %[15]Carvao (D-6)	
 %[16]Nuclear (D-1)      %[17]Nuclear (D-6)             %[18]GN (D-1)	               %[19]GN (D-6)              %[20]Tem (D+1)	 
-%[21]Vento (D+1)	   %[22]Direção (D+1)           %[23]Irradiância (D+1)   %[24]Pluviosidade (D+1)	
-%[25]Preço (D)             %[26]Preço (D-6)              
+%[21]Vento (D+1)	   %[22]DireÃ§Ã£o (D+1)           %[23]IrradiÃ¢ncia (D+1)   %[24]Pluviosidade (D+1)	
+%[25]PreÃ§o (D)             %[26]PreÃ§o (D-6)              
 
 %Previsoes
 % [resposta1, saidas_eolica,errors_eolica,previsao_eolica, prev_real_eolica ]= prev_eolica();       
@@ -55,10 +55,9 @@ run dados_treino.m ;   run dados_real.m;
   Z=[previsao_final_coj_sol prev_real_coj_sol];  graficoPrev(Z)
   disp(resposta4)
 
-% % parte leonel
 % 
 %  %------------------------------------------------------------------------------------------------------------------------
-% %  térmica de Carvao
+% %  tÃ©rmica de Carvao
 %   [ resposta4, saidas_carvao, previsao_carvao, prev_real_carvao]   = prev_carvao(); 
 %  cc=[previsao_carvao prev_real_carvao];  graficoPrev(cc)
 %   disp(resposta4)
@@ -78,7 +77,7 @@ run dados_treino.m ;   run dados_real.m;
 %   kk=[previsao_final_consumo prev_real_consumo];  graficoPrev(kk)
 %   disp(resposta4)
 %  %------------------------------------------------------------------------------------------------------------------------
-% %  Preço
+% %  PreÃ§o
 %   [ resposta4, saidas_preco, previsao_final_preco, prev_real_preco]   = prev_preco(); 
 %   rr=[previsao_final_preco prev_real_preco];  graficoPrev(rr)
 %   disp(resposta4)
