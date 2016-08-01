@@ -1,2 +1,9 @@
 # other-Projects
-C++, MatLab
+
+
+C++, MySQL & MatLab Projects
+
+## Project descriptions:
+
+
+
