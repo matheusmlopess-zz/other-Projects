@@ -8,16 +8,16 @@ C++, MySQL & MatLab Projects
 
 In this work, it was considered a data set production schedules, consumption and market prices of the Iberian electricity system. Based on hourly data, during 2012 and 2013, is intended to create predictive models for the following day (D + 1).
 
-The ultimate goal will be the presentation of forecasts for the Iberian added to the 24 hours of the following day (D + 1) for a set of extracted weeks of 2012 and 2013, with unknown information. The information should be held for the following variables:
+The ultimate goal was present the forecasts of the following day (D + 1) for the year 2014 and compere with the real data to validate the forecasts of the following variables:
 
 - Electricity consumption Forecast
 - Wind production forecast
-- Hídica production forecast
+- Hydric production forecast
 - Cogeneration production forecast + solar
-- Nuclear Thermal forecast
+- Thermal Nuclear forecast
 - Thermal coal forecast
-- Thermal forecast combined cycle
-- Export forecast
+- Thermal combined cycle forecast
+- Exports forecast
 - Price forecast MIBEL
 
 
