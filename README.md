@@ -6,22 +6,22 @@ C++, MySQL & MatLab Projects
 ## Project descriptions:
 #1- Forecast model using neural networks (Matlab)
 
-In this work, it was considered a data set production schedules, consumption and market prices of the Iberian electricity system. Based on hourly data, during 2012 and 2013, is intended to create predictive models for the following day (D + 1).
+In this work, it was considered a production schedules data set, consumption and market prices of the Iberian electricity system. Based on hourly data, during 2012 and 2013, is intended to create predictive models for the following day (D + 1).
 
-The ultimate goal was present the forecasts of the following day (D + 1) for the year 2014 and compere with the real data to validate the forecasts of the following variables:
+The ultimate goal was to present the forecasts of the following day (D + 1) for the year 2014 and compere with the real data values to validate the forecasts of the following variables:
 
-- Electricity consumption Forecast
-- Wind production forecast
-- Hydric production forecast
-- Cogeneration production forecast + solar
-- Thermal Nuclear forecast
-- Thermal coal forecast
-- Thermal combined cycle forecast
-- Exports forecast
-- Price forecast MIBEL
+- Electricity consumption 
+- Wind production 
+- Hydric production 
+- Cogeneration production  + solar
+- Thermal Nuclear 
+- Thermal coal 
+- Thermal combined cycle 
+- Exports 
+- Price MIBEL
 
 
-#2- Quiz game in Portuguese
+#2- Quiz game (PT- PT)
 
 ##FUNÇÕES DE IDENTIFICAÇÃO
 
