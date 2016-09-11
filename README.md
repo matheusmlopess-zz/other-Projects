@@ -21,7 +21,7 @@ The ultimate goal was to present the forecasts of the following day (D + 1) for 
 - Price MIBEL
 
 
-#2- Quiz game (PT- PT)
+#2- Quiz game (PT- PT) - C++, mySQL
 
 ##FUNÇÕES DE IDENTIFICAÇÃO
 
